@@ -3,12 +3,16 @@
 	<head>
 		<div>
 		<title>Convert table to html table</title>
-		<h1>Convert any table to html table</h1>
+		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-		<h3>Insert text</h3>
-		<textarea id="input-text" cols="120" rows="15"></textarea>
-		<!-- COMENTARIO -->
-		
+		<h1>Convert any table to html table</h1>
+		<form action="App/Controllers/controller_main_form.php" method="POST">
+			<textarea id="input-text" cols="120" rows="15" name="text-to-convert"></textarea>
+			<div>
+			<input type="reset" value="Limpiar">
+			<button type="submit">Convertir</button>
+			</div>
+		</form>
 	</body>
-</html>
+</html>	
